@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BANCO PCA</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <section id="inicio-sesion">
+            <h2>Inicia Sesión</h2>
+            <form id="form-inicio" onsubmit="iniciarSesion(event)">
+                <label for="correo-inicio">Correo Electrónico:</label>
+                <input type="email" id="correo-inicio" name="correo" required placeholder="Tu correo electrónico">
+
+                <label for="contraseña-inicio">Contraseña:</label>
+                <input type="password" id="contraseña-inicio" name="contraseña" required placeholder="Tu contraseña">
+
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        function iniciarSesion(event) {
+            event.preventDefault();  // Evita que el formulario se envíe de manera convencional
+
+            // Aquí validas los datos si es necesario
+            // Por ejemplo, si los datos son correctos, rediriges
+
+            // Si los datos son correctos, rediriges a la página 'banco.html'
+            window.location.href = 'banco.html';
+        }
+    </script>
+</body>
+</html>
